@@ -8,7 +8,7 @@ Version:                1.7.2
 %gometa
 
 Name:           cosign
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Container Signing, Verification and Storage in an OCI registry
 License:        Apache
 URL:            %{gourl}
@@ -41,6 +41,9 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 %{_bindir}/cosign
 
 %changelog
+* Sun Apr 10 2022 Christian Rebischke <chris@shibumi.dev> 1.7.2-2
+- set correct source URL (chris@shibumi.dev)
+
 * Sun Apr 10 2022 Christian Rebischke <chris@shibumi.dev> 1.7.2-1
 - new package built with tito
 
