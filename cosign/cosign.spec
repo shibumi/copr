@@ -24,7 +24,7 @@ Cosign aims to make signatures invisible infrastructure.
 %goprep
 
 %build
-%gobuild -o %gobuilddir/bin/cosign %goipath/cmd/cosign
+%gobuild -o %{gobuilddir}/bin/cosign %{goipath}/cmd/cosign
 
 %install
 %gopkginstall
@@ -41,8 +41,7 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 %{_bindir}/cosign
 
 %changelog
-* Mon Apr 11 2022 Christian Rebischke <chris@shibumi.dev> 1.7.1-1
-- new package built with tito
+
 
 
 
