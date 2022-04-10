@@ -8,7 +8,7 @@ Version:                1.7.1
 %gometa
 
 Name:           cosign
-Release:        1%{?dist}
+Release:        0%{?dist}
 Summary:        Container Signing, Verification and Storage in an OCI registry
 License:        Apache
 URL:            %{gourl}
