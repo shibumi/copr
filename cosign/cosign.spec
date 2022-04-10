@@ -2,13 +2,13 @@
 
 # https://github.com/sigstore/cosign
 %global goipath         github.com/sigstore/cosign
-Version:                1.7.2
+Version:                1.7.1
 %global tag             %{version}
 
 %gometa
 
 Name:           cosign
-Release:        2%{?dist}
+Release:        0%{?dist}
 Summary:        Container Signing, Verification and Storage in an OCI registry
 License:        Apache
 URL:            %{gourl}
@@ -41,11 +41,7 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 %{_bindir}/cosign
 
 %changelog
-* Sun Apr 10 2022 Christian Rebischke <chris@shibumi.dev> 1.7.2-2
-- set correct source URL (chris@shibumi.dev)
 
-* Sun Apr 10 2022 Christian Rebischke <chris@shibumi.dev> 1.7.2-1
-- new package built with tito
 
 
 
