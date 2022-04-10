@@ -2,13 +2,13 @@
 
 # https://github.com/cbednarski/hostess
 %global goipath         github.com/cbednarski/hostess
-Version:                v0.5.2
+Version:                0.5.2
 %global tag             %{version}
 
 %gometa
 
 Name:           hostess
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Idempotent command-line utility for managing your /etc/hosts file.
 License:        MIT
 URL:            %{gourl}
