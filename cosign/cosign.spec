@@ -12,7 +12,7 @@ Release:        1%{?dist}
 Summary:        Container Signing, Verification and Storage in an OCI registry
 License:        Apache
 URL:            %{gourl}
-Source:         %{gosource}
+Source:         https://github.com/sigstore/cosign/archive/refs/tags/v%{version}.tar.gz
 
 %description
 Container Signing, Verification and Storage in an OCI registry.
