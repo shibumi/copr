@@ -23,12 +23,11 @@ Idempotent command-line utility for managing your /etc/hosts file.
 %goprep
 
 %build
-%gobuild -o %gobuilddir/bin/hostess %goipath
+%gobuild -o %{gobuilddir}/bin/hostess %{goipath}
 
 %install
-%gopkginstall
 install -m 0755 -vd                     %{buildroot}%{_bindir}
-install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
+install -m 0755 -vp %{gobuilddir}/bin/hostess %{buildroot}%{_bindir}/
 	
 %if %{with check}
 %check
@@ -42,6 +41,7 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 %changelog
 * Sun Apr 10 2022 Christian Rebischke <chris@shibumi.dev> 0.5.2-1
 - new package built with tito
+
 
 
 
