@@ -8,7 +8,7 @@ Version:                0.5.2
 %gometa
 
 Name:           hostess
-Release:        3%{?dist}
+Release:        1%{?dist}
 Summary:        Idempotent command-line utility for managing your /etc/hosts file.
 License:        MIT
 URL:            %{gourl}
