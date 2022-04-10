@@ -12,7 +12,7 @@ Release:        1%{?dist}
 Summary:        Idempotent command-line utility for managing your /etc/hosts file.
 License:        MIT
 URL:            %{gourl}
-Source:         %{gosource}
+Source:         https://github.com/cbednarski/hostess/archive/refs/tags/v%{version}.tar.gz
 
 %description
 Idempotent command-line utility for managing your /etc/hosts file.
@@ -39,7 +39,10 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 %license LICENSE
 %{_bindir}/hostess
 
-%autochangelog
+%changelog
+* Sun Apr 10 2022 Christian Rebischke <chris@shibumi.dev> 0.5.2-1
+- new package built with tito
+
 
 
 
