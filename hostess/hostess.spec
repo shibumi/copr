@@ -40,6 +40,9 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 %{_bindir}/hostess
 
 %changelog
+* Sun Apr 10 2022 Christian Rebischke <chris@shibumi.dev> 0.5.2-1
+- new package built with tito
+
 
 
 
