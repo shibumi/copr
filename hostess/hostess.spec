@@ -8,7 +8,7 @@ Version:                0.5.2
 %gometa
 
 Name:           hostess
-Release:        1%{?dist}
+Release:        %autorelease
 Summary:        Idempotent command-line utility for managing your /etc/hosts file.
 License:        MIT
 URL:            %{gourl}
@@ -39,9 +39,7 @@ install -m 0755 -vp %{gobuilddir}/bin/* %{buildroot}%{_bindir}/
 %license LICENSE
 %{_bindir}/hostess
 
-%changelog
-* Sun Apr 10 2022 Christian Rebischke <chris@shibumi.dev> 0.5.2-1
-- new package built with tito
+%autochangelog
 
 
 
