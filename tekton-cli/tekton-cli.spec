@@ -8,7 +8,7 @@ Version:                0.23.1
 %gometa
 
 Name:           tekton-cli
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Command line tool for interacting with Tekton
 License:        Apache
 URL:            %{gourl}
@@ -39,6 +39,9 @@ install -m 0755 -vp %{gobuilddir}/bin/tekton-cli %{buildroot}%{_bindir}/
 %{_bindir}/tekton-cli
 
 %changelog
+* Wed Apr 13 2022 Christian Rebischke <chris@shibumi.dev> 0.23.1-2
+- fix: tekton source (chris@shibumi.dev)
+
 * Wed Apr 13 2022 Christian Rebischke <chris@shibumi.dev> 0.23.1-1
 - new package built with tito
 
