@@ -23,7 +23,7 @@ Command line tool for interacting with Tekton
 %goprep
 
 %build
-%gobuild -o %{gobuilddir}/bin/tkn %{goipath}/cmd/tkn/main.go
+%gobuild -o %{gobuilddir}/bin/tkn %{goipath}/cmd/tkn/
 
 %install
 install -m 0755 -vd                     %{buildroot}%{_bindir}
