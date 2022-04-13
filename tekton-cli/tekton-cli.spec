@@ -8,7 +8,7 @@ Version:                0.23.1
 %gometa
 
 Name:           tekton-cli
-Release:        3%{?dist}
+Release:        0%{?dist}
 Summary:        Command line tool for interacting with Tekton
 License:        Apache
 URL:            %{gourl}
