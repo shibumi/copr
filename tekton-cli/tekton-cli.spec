@@ -23,11 +23,11 @@ Command line tool for interacting with Tekton
 %goprep
 
 %build
-%gobuild -o %{gobuilddir}/bin/tekton-cli %{goipath}
+%gobuild -o %{gobuilddir}/bin/tkn %{goipath}/cmd/tkn/main.go
 
 %install
 install -m 0755 -vd                     %{buildroot}%{_bindir}
-install -m 0755 -vp %{gobuilddir}/bin/tekton-cli %{buildroot}%{_bindir}/
+install -m 0755 -vp %{gobuilddir}/bin/tkn %{buildroot}%{_bindir}/
 	
 %if %{with check}
 %check
@@ -36,7 +36,7 @@ install -m 0755 -vp %{gobuilddir}/bin/tekton-cli %{buildroot}%{_bindir}/
 
 %files
 %license LICENSE
-%{_bindir}/tekton-cli
+%{_bindir}/tkn
 
 %changelog
 * Wed Apr 13 2022 Christian Rebischke <chris@shibumi.dev> 0.23.1-2
