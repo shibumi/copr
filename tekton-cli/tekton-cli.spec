@@ -12,7 +12,7 @@ Release:        1%{?dist}
 Summary:        Command line tool for interacting with Tekton
 License:        Apache
 URL:            %{gourl}
-Source:         https://github.com/cbednarski/hostess/archive/refs/tags/v%{version}.tar.gz
+Source:         https://github.com/tektoncd/cli/archive/refs/tags/v%{version}.tar.gz
 
 %description
 Command line tool for interacting with Tekton
